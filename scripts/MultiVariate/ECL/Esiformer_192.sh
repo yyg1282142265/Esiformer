@@ -7,7 +7,7 @@ if [ ! -d "./logs/LongForecasting" ]; then
     mkdir ./logs/LongForecasting
 fi
 model_name=Esiformer
-model_id_name=ECL_96_96
+model_id_name=ECL_96_192
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -20,7 +20,7 @@ python -u run.py \
   --features M \
   --seq_len 96 \
   --label_len 48 \
-  --pred_len 96 \
+  --pred_len 192 \
   --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
