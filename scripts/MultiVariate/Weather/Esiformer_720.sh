@@ -1,7 +1,7 @@
 # export CUDA_VISIBLE_DEVICES=0
 
 model_name=Esiformer
-model_id_name=weather_96_96
+model_id_name=weather_96_720
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -14,7 +14,7 @@ python -u run.py \
   --features M \
   --seq_len 96 \
   --label_len 48 \
-  --pred_len 96 \
+  --pred_len 720 \
   --e_layers 3 \
   --d_layers 1 \
   --factor 3 \
