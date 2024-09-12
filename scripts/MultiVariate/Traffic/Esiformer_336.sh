@@ -1,5 +1,5 @@
 model_name=Esiformer
-model_id=traffic_96_96
+model_id=traffic_96_336
 
 python -u run.py \
   --task_name long_term_forecast \
@@ -12,7 +12,7 @@ python -u run.py \
   --features M \
   --seq_len 96 \
   --label_len 48 \
-  --pred_len 96 \
+  --pred_len 336 \
   --e_layers 4 \
   --d_layers 1 \
   --factor 3 \
